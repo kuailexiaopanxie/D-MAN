@@ -1,12 +1,25 @@
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32.0845 7.94025V4H24.0203V7.9896H16.029V4H7.91553V7.94025H4V36H16.0044V32.0045C16.0058 30.9457 16.4274 29.9308 17.1766 29.1826C17.9258 28.4345 18.9412 28.0143 20 28.0143C21.0588 28.0143 22.0743 28.4345 22.8234 29.1826C23.5726 29.9308 23.9942 30.9457 23.9956 32.0045V36H36V7.94025H32.0845Z"
+    <!-- 书本主体 -->
+    <path d="M8 6C6.89543 6 6 6.89543 6 8V32C6 33.1046 6.89543 34 8 34H32C33.1046 34 34 33.1046 34 32V8C34 6.89543 33.1046 6 32 6H8Z" 
           fill="url(#paint0_linear)"/>
+    
+    <!-- 书页效果 -->
+    <path d="M34 32C34 33.1046 33.1046 34 32 34H8C6.89543 34 6 33.1046 6 32V31C6 29.8954 6.89543 29 8 29H32C33.1046 29 34 29.8954 34 31V32Z"
+          fill="white" fill-opacity="0.3"/>
+    
+    <!-- 书脊 -->
+    <path d="M8 6H10V34H8C6.89543 34 6 33.1046 6 32V8C6 6.89543 6.89543 6 8 6Z"
+          fill="rgba(0,0,0,0.2)"/>
+    
+    <!-- 书页纹理线条 -->
+    <path d="M12 12H28M12 18H28M12 24H28" 
+          stroke="white" stroke-width="2" stroke-linecap="round"/>
+          
     <defs>
-        <linearGradient id="paint0_linear" x1="2.94192" y1="4.89955" x2="37.7772" y2="39.7345"
-                        gradientUnits="userSpaceOnUse">
-            <stop offset="0.15937" stop-color="#3BEA62"/>
-            <stop offset="0.5404" stop-color="#3C99CC1"/>
-            <stop offset="0.93739" stop-color="#6B57FF"/>
+        <linearGradient id="paint0_linear" x1="6" y1="6" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3BEA62"/>
+            <stop offset="0.5" stop-color="#3C99CC"/>
+            <stop offset="1" stop-color="#6B57FF"/>
         </linearGradient>
     </defs>
 </svg>
