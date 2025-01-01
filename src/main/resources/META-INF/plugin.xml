@@ -13,10 +13,9 @@
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
-    <description><![CDATA[
-    定义变量、类名含义，变量、类名概念一致化，方便理解业务含义，减少业务理解成本和误差。
-    支持自定义配置api和prompt。
-  ]]></description>
+    <description>
+        定义变量、类名含义，变量、类名概念一致化，方便理解业务含义，减少业务理解成本和误差。 支持自定义配置api和prompt。
+    </description>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
