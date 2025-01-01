@@ -1,0 +1,47 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.wdkg.D-MAN</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>D-MAN</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="" url="">wdkg</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    定义变量、类名含义，变量、类名概念一致化，方便理解业务含义，减少业务理解成本和误差
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="com.wdkg.man.setting.ApiSettingState"/>
+        <projectConfigurable instance="com.wdkg.man.setting.ApiConfigurable"/>
+    </extensions>
+
+    <actions>
+<!--        <action id="DManAction" class="com.wdkg.man.action.DManAction" text="D-MAN"-->
+<!--                description="D-MAN,D=definition,定义侠;D=dictionary;字典侠">-->
+<!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
+<!--            <keyboard-shortcut keymap="$default" first-keystroke="control shift N"/>-->
+<!--        </action>-->
+
+        <action id="DManFastAction"
+                class="com.wdkg.man.action.DManFastAction"
+                text="D-FASTMAN"
+                description="Perform different operations based on shortcut">
+            <keyboard-shortcut keymap="$default" first-keystroke="control shift 1"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control shift 2"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control shift 3"/>
+        </action>
+    </actions>
+</idea-plugin>
